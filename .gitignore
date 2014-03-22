@@ -1,0 +1,8 @@
+# Ignore editing backups
+*~
+*.swp
+*.DS_Store
+
+# Ignore vagrant directory
+.vagrant/
+
