@@ -1,7 +1,7 @@
 baseBox    = 'ubuntu-12.04'
 baseBoxUrl = 'http://timhuegdon.com/vagrant-boxes/ubuntu-12.04.box'
 ipAddress  = '192.168.128.128'
-projectDir = 'devbox-php.dev'
+projectDir = 'devbox-php5'
 
 
 Vagrant.configure('2') do |config|
