@@ -1,7 +1,9 @@
 PHP5 Devbox
 ===========
 
-A vagrant-based virtual machine for running multiple PHP projects, so you don't have to create separate VagrantFiles for each project, and you want the flexibility of jumping between these projects (e.g. working on a webapp, a Wordpress theme, and a php library in the same virtual machine, but as separate repos/projects).
+A vagrant-based virtual machine for running multiple PHP projects side-by-side. So you don't have to create separate VMs for each project.
+
+This gives the flexibility of jumping between projects (e.g. working on a webapp, a Wordpress theme, and a php library in the same virtual machine, but as separate repos/projects). Or running several independent PHP-based services talking to each other, without resorting to multiple virtual machines.
 
 
 Platform:
