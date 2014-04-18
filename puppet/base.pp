@@ -27,6 +27,9 @@ include nginx
 # PHP install: CLI and FPM
 include php
 
+# Memcache
+include memcache
+
 # Beanstalk message queue (optional)
 #include beanstalk
 
