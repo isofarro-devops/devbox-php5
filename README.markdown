@@ -9,13 +9,16 @@ This gives the flexibility of jumping between projects (e.g. working on a webapp
 Platform:
 ---------
 
-* PHP5.3 -- the standard Ubuntu package
-* PHPUnit -- for PHP Unit testing
-* Composer -- for PHP package management
-* PHP-FPM
-* nginx
+* Ubuntu 12.04 LTS (Precise Pangolin)
+* Nginx -- web server
+* PHP 5.3.28 -- the standard Ubuntu package
+    * PHP-FPM -- Fast-CGI Process Manager
+    * PHPUnit -- for PHP Unit testing
+    * Composer -- for PHP package management
 * MySQL
-* beanstalkd
+* Beanstalk Message Queue
+* Memcache -- in-memory object cache system
+* MemcacheDB -- Berkeley DBM backed persistent document store using Memcache protocol
 
 
 Getting started
@@ -28,7 +31,7 @@ This configuration assumes that all your PHP projects are together in one direct
 	cd devbox-php5
 	vagrant up
 
-When the provisioning is finished, you can now ssh into your new devbox:
+When the provisioning is finished (takes about 5 minutes), you can now ssh into your new devbox:
 
 	vagrant ssh
 	ls -la Projects/
