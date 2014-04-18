@@ -25,7 +25,7 @@ This configuration assumes that all your PHP projects are together in one direct
 
 	cd ~/Projects
 	git clone git@github.com:isofarro/devbox-php5.git
-	cd devbox-php5.git
+	cd devbox-php5
 	vagrant up
 
 When the provisioning is finished, you can now ssh into your new devbox:
