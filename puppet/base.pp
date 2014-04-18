@@ -30,6 +30,8 @@ include php
 # Beanstalk message queue (optional)
 #include beanstalk
 
+# XMLRPC support - PEAR XML_RPC2
+include xmlrpc
 
 
 #
