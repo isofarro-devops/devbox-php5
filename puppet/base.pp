@@ -33,6 +33,9 @@ include php
 # XMLRPC support - PEAR XML_RPC2
 include xmlrpc
 
+# MemcacheDb - document store
+include memcachedb
+
 
 #
 # Project specific config
