@@ -9,6 +9,7 @@ class baseconfig {
 
 	package { 'core-packages':
 		name => [
+			'python-software-properties',
 			'wget',
 			'curl',
 			'vim',
