@@ -9,7 +9,8 @@ class php {
 			'php-pear',
 			'php5-sqlite',
 			'php5-mysql',
-			'php5-memcache'
+			'php5-memcache',
+			'php5-curl'
 		],
 		ensure  => installed,
 		require => Package['core-packages'],
