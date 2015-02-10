@@ -4,7 +4,7 @@ class php::composer {
         creates => '/tmp/composer.phar',
         command => 'curl -sS https://getcomposer.org/installer | php -- --install-dir=/tmp',
         user    => 'root',
-        require => Package['php5-baseline'],
+        require => Class['php::baseline'],
     }
 
     exec { 'install-composer':
