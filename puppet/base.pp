@@ -25,6 +25,7 @@ include mysql
 include nginx
 
 # PHP install: CLI and FPM
+include php55
 include php
 
 # Memcache
