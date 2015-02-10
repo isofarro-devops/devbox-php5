@@ -1,18 +1,15 @@
-baseBox    = 'ubuntu-12.04'
-baseBoxUrl = 'http://timhuegdon.com/vagrant-boxes/ubuntu-12.04.box'
+baseBox    = 'ubuntu/trusty64'
 ipAddress  = '192.168.128.128'
 projectDir = 'devbox-php5'
 
 
 Vagrant.configure('2') do |config|
     config.vm.box     = baseBox
-    config.vm.box_url = baseBoxUrl
-
     config.vm.network :private_network, ip: ipAddress
 
     config.vm.provider 'virtualbox' do |my_vm|
         my_vm.customize [
-            'modifyvm', :id, 
+            'modifyvm', :id,
             '--memory', "512"
         ]
     end
