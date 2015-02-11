@@ -20,6 +20,7 @@ Platform:
 
 Optional components:
 
+* PHP 5.5 from ondrej (current version 5.5.21)
 * Beanstalk Message Queue
 * MemcacheDB -- Berkeley DBM backed persistent document store using Memcache protocol
 
