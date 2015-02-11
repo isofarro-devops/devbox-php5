@@ -31,11 +31,11 @@ include php
 # Memcache
 include memcache
 
-# Beanstalk message queue (optional)
-#include beanstalk
+# OPTIONAL: Beanstalk message queue
+# include beanstalk
 
-# MemcacheDb - document store
-include memcachedb
+# OPTIONAL: MemcacheDb - document store
+# include memcachedb
 
 
 #

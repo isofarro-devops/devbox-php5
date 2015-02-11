@@ -10,14 +10,17 @@ Platform:
 ---------
 
 * Ubuntu 12.04 LTS (Precise Pangolin)
-* Nginx -- web server
-* PHP 5.3.28 -- the standard Ubuntu package
+* Nginx 1.1.19 -- web server
+* PHP 5.3.10 -- the standard Ubuntu package
     * PHP-FPM -- Fast-CGI Process Manager
-    * PHPUnit -- for PHP Unit testing
-    * Composer -- for PHP package management
-* MySQL
-* Beanstalk Message Queue
+    * PHPUnit 4.5.0 -- for PHP Unit testing
+    * Composer 1.0 -- for PHP package management
+* MySQL 5.5.41
 * Memcache -- in-memory object cache system
+
+Optional components:
+
+* Beanstalk Message Queue
 * MemcacheDB -- Berkeley DBM backed persistent document store using Memcache protocol
 
 
@@ -44,3 +47,8 @@ In `/etc/hosts` of your host, add an entry for this:
 
 And hitting `http://devbox-php.dev/` in a browser brings up the nginx welcome page.
 
+
+Enabling optional components:
+-----------------------------
+
+To enable the optional components, go into the `puppet/base.pp` file and uncomment the `include` line for the component.
