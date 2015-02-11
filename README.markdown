@@ -11,7 +11,7 @@ Platform:
 
 * Ubuntu 12.04 LTS (Precise Pangolin)
 * Nginx 1.1.19 -- web server
-* PHP 5.3.10 -- the standard Ubuntu package
+* PHP 5.5.21 -- the ondrej repo package
     * PHP-FPM -- Fast-CGI Process Manager
     * PHPUnit 4.5.0 -- for PHP Unit testing
     * Composer 1.0 -- for PHP package management
@@ -20,7 +20,6 @@ Platform:
 
 Optional components:
 
-* PHP 5.5 from ondrej (current version 5.5.21)
 * Beanstalk Message Queue
 * MemcacheDB -- Berkeley DBM backed persistent document store using Memcache protocol
 
