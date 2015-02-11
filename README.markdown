@@ -47,3 +47,8 @@ In `/etc/hosts` of your host, add an entry for this:
 
 And hitting `http://devbox-php.dev/` in a browser brings up the nginx welcome page.
 
+
+Enabling optional components:
+-----------------------------
+
+To enable the optional components, go into the `puppet/base.pp` file and uncomment the `include` line for the component.
