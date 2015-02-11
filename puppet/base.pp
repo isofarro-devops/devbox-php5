@@ -25,7 +25,7 @@ include mysql
 include nginx
 
 # OPTIONAL: PHP 5.5 from ondrej
-# include php55
+include php55
 
 # PHP install: CLI and FPM
 include php
