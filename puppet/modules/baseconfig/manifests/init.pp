@@ -16,6 +16,7 @@ class baseconfig {
 			'git-core',
 			'htop',
 			'sqlite3',
+			'unzip'
 		],
 		ensure  => installed,
 		require => Exec['apt-update'],
