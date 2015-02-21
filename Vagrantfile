@@ -12,6 +12,10 @@ Vagrant.configure('2') do |config|
             'modifyvm', :id,
             '--memory', "512"
         ]
+
+        # Fix for slow external network connections
+        my_vm.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
+        my_vm.customize ['modifyvm', :id, '--natdnsproxy1', 'on']
     end
 
     config.vm.synced_folder '../', '/home/vagrant/Projects', :nfs => true
