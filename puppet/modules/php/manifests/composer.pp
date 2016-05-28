@@ -1,10 +1,12 @@
 class php::composer {
-
     exec { 'download-composer':
         creates => '/tmp/composer.phar',
         command => 'curl -sS https://getcomposer.org/installer | php -- --install-dir=/tmp',
         user    => 'root',
-        require => Class['php::baseline'],
+        require => [
+            Package['curl'],
+            Package['php5-cli']
+        ],
     }
 
     exec { 'install-composer':
@@ -13,5 +15,4 @@ class php::composer {
         user    => 'root',
         require => Exec['download-composer'],
     }
-
 }
