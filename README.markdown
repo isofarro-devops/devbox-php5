@@ -24,7 +24,7 @@ Platform:
 Getting started
 ---------------
 
-This configuration assumes that all your PHP projects are together in one directory (e.g. in `~/Projects/`). So we clone this repo inside your Projects directory.
+This configuration assumes that all your PHP projects are together in one directory (e.g. in `~/Projects/`). So we download and install this repository inside your Projects directory.
 
 	cd ~/Projects
 	curl -o devbox-php5-ubuntu-14.04.zip https://codeload.github.com/isofarro/devbox-php5/zip/ubuntu-14.04
@@ -32,7 +32,7 @@ This configuration assumes that all your PHP projects are together in one direct
 	cd devbox-php5-ubuntu-14.04.zip
 	vagrant up
 
-When the provisioning is finished (takes about 5 minutes), you can now ssh into your new devbox:
+When the provisioning is finished (takes about 10 minutes), you can now ssh into your new devbox:
 
 	vagrant ssh
 	ls -la Projects/
