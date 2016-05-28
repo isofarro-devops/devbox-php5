@@ -11,14 +11,14 @@ Platform:
 
 * Ubuntu 14.04 LTS (Precise Pangolin)
 * Nginx -- web server
-* PHP 5.3.28 -- the standard Ubuntu package
+* PHP 5.5.9 -- the standard Ubuntu package
     * PHP-FPM -- Fast-CGI Process Manager
     * PHPUnit -- for PHP Unit testing
     * Composer -- for PHP package management
 * MySQL
-* Beanstalk Message Queue
-* Memcache -- in-memory object cache system
-* MemcacheDB -- Berkeley DBM backed persistent document store using Memcache protocol
+* Beanstalk Message Queue -- optional
+* Memcache -- optional
+* MemcacheDB -- optional
 
 
 Getting started
