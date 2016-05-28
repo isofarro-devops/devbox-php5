@@ -55,4 +55,4 @@ To enable the optional components, go into the `puppet/base.pp` file and uncomme
 PHP5 devboxes for older Ubuntu releases:
 ----------------------------------------
 
-* [PHP5 Devbov Ubuntu 12.04/precise](https://github.com/isofarro/devbox-php5/tree/ubuntu-12.04)
+* [PHP5 Devbox Ubuntu 12.04 (precise)](https://github.com/isofarro/devbox-php5/tree/ubuntu-12.04)
