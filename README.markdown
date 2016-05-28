@@ -27,8 +27,9 @@ Getting started
 This configuration assumes that all your PHP projects are together in one directory (e.g. in `~/Projects/`). So we clone this repo inside your Projects directory.
 
 	cd ~/Projects
-	git clone git@github.com:isofarro/devbox-php5.git
-	cd devbox-php5
+	wget https://github.com/isofarro/devbox-php5/archive/ubuntu-14.04.zip
+	unzip devbox-php5-ubuntu-14.04.zip
+	cd devbox-php5-ubuntu-14.04.zip
 	vagrant up
 
 When the provisioning is finished (takes about 5 minutes), you can now ssh into your new devbox:
