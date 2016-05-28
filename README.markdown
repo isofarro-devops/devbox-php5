@@ -9,7 +9,7 @@ This gives the flexibility of jumping between projects (e.g. working on a webapp
 Platform:
 ---------
 
-* Ubuntu 14.04 LTS (Precise Pangolin)
+* Ubuntu 14.04 LTS (Trusty)
 * Nginx -- web server
 * PHP 5.5.9 -- the standard Ubuntu package
     * PHP-FPM -- Fast-CGI Process Manager
