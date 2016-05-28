@@ -1,12 +1,9 @@
 class php::composer {
     exec { 'download-composer':
         creates => '/tmp/composer.phar',
-        command => 'curl -sS https://getcomposer.org/installer | php -- --install-dir=/tmp',
+        command => 'wget -O /tmp/composer.phar https://getcomposer.org/download/1.1.1/composer.phar',
         user    => 'root',
-        require => [
-            Package['curl'],
-            Package['php5-cli']
-        ],
+        require => Package['wget'],
     }
 
     exec { 'install-composer':
