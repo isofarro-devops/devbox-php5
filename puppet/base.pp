@@ -2,7 +2,14 @@
 # Global defaults/config
 #
 Exec {
-    path => "/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin"
+    path => [
+    	'/usr/local/sbin',
+    	'/usr/local/bin',
+    	'/sbin',
+    	'/bin',
+    	'/usr/sbin',
+    	'/usr/bin'
+    ]
 }
 
 # Project variables
