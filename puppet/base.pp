@@ -2,7 +2,14 @@
 # Global defaults/config
 #
 Exec {
-    path => "/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin"
+    path => [
+    	'/usr/local/sbin',
+    	'/usr/local/bin',
+    	'/sbin',
+    	'/bin',
+    	'/usr/sbin',
+    	'/usr/bin'
+    ]
 }
 
 # Project variables
@@ -31,7 +38,7 @@ include nginx
 include php
 
 # Memcache
-include memcache
+# include memcache
 
 # OPTIONAL: Beanstalk message queue
 # include beanstalk

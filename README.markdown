@@ -9,20 +9,16 @@ This gives the flexibility of jumping between projects (e.g. working on a webapp
 Platform:
 ---------
 
-* Ubuntu 12.04 LTS (Precise Pangolin)
-* Nginx 1.1.19 -- web server
-* PHP 5.3.10 -- the standard Ubuntu package
+* Ubuntu 14.04 LTS (Precise Pangolin)
+* Nginx -- web server
+* PHP 5.5.9 -- the standard Ubuntu package
     * PHP-FPM -- Fast-CGI Process Manager
-    * PHPUnit 4.5.0 -- for PHP Unit testing
-    * Composer 1.0 -- for PHP package management
-* MySQL 5.5.41
-* Memcache -- in-memory object cache system
-
-Optional components:
-
-* PHP 5.5 from ondrej (current version 5.5.21)
-* Beanstalk Message Queue
-* MemcacheDB -- Berkeley DBM backed persistent document store using Memcache protocol
+    * PHPUnit -- for PHP Unit testing
+    * Composer -- for PHP package management
+* MySQL
+* Beanstalk Message Queue -- optional
+* Memcache -- optional
+* MemcacheDB -- optional
 
 
 Getting started
@@ -31,8 +27,9 @@ Getting started
 This configuration assumes that all your PHP projects are together in one directory (e.g. in `~/Projects/`). So we clone this repo inside your Projects directory.
 
 	cd ~/Projects
-	git clone git@github.com:isofarro/devbox-php5.git
-	cd devbox-php5
+	wget https://github.com/isofarro/devbox-php5/archive/ubuntu-14.04.zip
+	unzip devbox-php5-ubuntu-14.04.zip
+	cd devbox-php5-ubuntu-14.04.zip
 	vagrant up
 
 When the provisioning is finished (takes about 5 minutes), you can now ssh into your new devbox:
@@ -53,3 +50,9 @@ Enabling optional components:
 -----------------------------
 
 To enable the optional components, go into the `puppet/base.pp` file and uncomment the `include` line for the component.
+
+
+PHP5 devboxes for older Ubuntu releases:
+----------------------------------------
+
+* [PHP5 Devbov Ubuntu 12.04/precise](https://github.com/isofarro/devbox-php5/tree/ubuntu-12.04)
