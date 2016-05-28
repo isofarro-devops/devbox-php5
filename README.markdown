@@ -45,3 +45,8 @@ In `/etc/hosts` of your host, add an entry for this:
 
 And hitting `http://devbox-php.dev/` in a browser brings up the nginx welcome page.
 
+
+PHP5 devboxes for older Ubuntu releases:
+----------------------------------------
+
+* [https://github.com/isofarro/devbox-php5/tree/ubuntu-12.04](PHP5 Devbov Ubuntu 12.04/precise): 
