@@ -49,4 +49,4 @@ And hitting `http://devbox-php.dev/` in a browser brings up the nginx welcome pa
 PHP5 devboxes for older Ubuntu releases:
 ----------------------------------------
 
-* [https://github.com/isofarro/devbox-php5/tree/ubuntu-12.04](PHP5 Devbov Ubuntu 12.04/precise): 
+* [https://github.com/isofarro/devbox-php5/tree/ubuntu-12.04](PHP5 Devbov Ubuntu 12.04/precise)
