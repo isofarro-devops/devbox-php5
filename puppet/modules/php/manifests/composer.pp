@@ -12,4 +12,11 @@ class php::composer {
         user    => 'root',
         require => Exec['download-composer'],
     }
+
+    #exec { 'update-composer':
+    #    command => '/usr/local/bin/composer self-update',
+    #    user    => 'root',
+    #    logoutput => 'on_failure',
+    #    require => Exec['install-composer'],
+    #}
 }
